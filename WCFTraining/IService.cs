@@ -12,8 +12,8 @@ namespace WCFTraining
     [ServiceContract]
     public interface IService
     {
-
-        [OperationContract]
+        [WebInvoke(Method = "POST", UriTemplate = "GetData", ResponseFormat = WebMessageFormat.Json, RequestFormat = WebMessageFormat.Json)]
+        [OperationContract]        
         string GetData(int value1, int value2);
 
         [OperationContract]

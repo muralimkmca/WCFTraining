@@ -19,5 +19,10 @@ namespace WCFConsume
             samplewcfservice.ServiceClient wcfsvc = new samplewcfservice.ServiceClient("WSHttpBinding_IService");
             Label1.Text = wcfsvc.GetData(5, 5);
         }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
